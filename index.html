@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Pad Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="letter-container" id="letterPad">
+        <!-- Item Number at the top -->
+        <div class="item-number-top" id="itemNo"></div>
+        
+        <!-- Watermark container -->
+        <div class="watermark-container" id="watermarkContainer"></div>
+        
+        <!-- Empty Page Content (displays when emptyPage is YES) -->
+        <div id="emptyPageContent" style="display: none;">
+            <div class="empty-content-container" id="emptyContentContainer">
+                <!-- Content will be added dynamically -->
+            </div>
+        </div>
+        
+        <!-- Letter Content (hideable based on emptyPage) -->
+        <div id="letterContent">
+            <!-- Logo and Letter Header -->
+            <div class="letter-header">
+                <div class="header-with-logo">
+                    <div class="logo-container" id="logoContainer">
+                        <!-- Logo will be added dynamically -->
+                    </div>
+                    <div class="header-text">
+                        <div class="office-name" id="officeName1"></div>
+                        <div class="office-name" id="officeName2"></div>
+                    </div>
+                </div>
+                <!-- Contact info below office name but aligned right -->
+                <div class="contact-info-container">
+                    <div class="contact-info-right" id="contactInfo"></div>
+                </div>
+                <!-- Department and Main Office in header -->
+                <div class="department-header">
+                    <div id="department"></div>
+                    <div id="mainOffice"></div>
+                </div>
+            </div>
+            
+            <!-- Letter References -->
+            <div class="letter-references">
+                <div class="left-references">
+                    <div class="entry-section">
+                        <div id="entryNo"></div>
+                        <div id="entryDate"></div>
+                    </div>
+                </div>
+                <div class="right-references">
+                    <div class="case-section">
+                        <div id="caseNo"></div>
+                    </div>
+                    <div class="date-section">
+                        <div id="date"></div>
+                    </div>
+                    <div class="item-section">
+                        <div id="dispatchedNo"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Letter Subject -->
+            <div class="letter-subject" id="subject"></div>
+            
+            <!-- Letter To -->
+            <div class="letter-to" id="addressedTo"></div>
+            
+            <!-- Letter Content -->
+            <div class="letter-content" id="content"></div>
+            
+            <!-- Image Gallery (if any) -->
+            <div class="image-gallery" id="imageGallery"></div>
+            
+            <!-- Letter Signatures -->
+            <div class="letter-signatures">
+                <div class="signature-block">
+                    <div class="signature" id="signature1"></div>
+                    <div class="signature-name" id="signatureName1"></div>
+                    <div class="signature-position" id="signaturePosition1"></div>
+                </div>
+                <div class="signature-block">
+                    <div class="signature" id="signature2"></div>
+                    <div class="signature-name" id="signatureName2"></div>
+                    <div class="signature-position" id="signaturePosition2"></div>
+                </div>
+            </div>
+            
+            <!-- Tokadesh and Bodartha Section (below signature) -->
+            <div class="post-signature-section">
+                <div id="tokadesh"></div>
+                
+                <!-- Bodartha Section -->
+                <div class="bodartha-section" id="bodarthaSectionContainer">
+                    <div class="bodartha-heading" id="bodarthaHeading"></div>
+                    <ol class="bodartha-list" id="bodharthaList"></ol>
+                </div>
+            </div>
+            
+            <!-- Letter Footer -->
+            <div class="letter-footer">
+                <div id="footerPhone"></div>
+                <div id="footerEmail"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filter Controls -->
+    <div class="filter-controls">
+        <button class="filter-button" id="filterButton" type="button" aria-label="Open filter panel">
+            <span>⚙️</span>
+        </button>
+        <div class="filter-panel" id="filterPanel">
+            <label for="itemFilter"><strong>Select Letter:</strong></label>
+            <select id="itemFilter" class="filter-select">
+                <!-- Options will be populated from data.js -->
+            </select>
+            <div style="margin-top: 10px;">
+                <small>Click outside or on the button to close</small>
+            </div>
+        </div>
+    </div>
+     <script src="data1.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

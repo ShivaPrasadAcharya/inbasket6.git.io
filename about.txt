@@ -1,0 +1,2 @@
+inbasket exercises of psc
+change data.js, data1.js and data2.js in html to see contents of each data file.

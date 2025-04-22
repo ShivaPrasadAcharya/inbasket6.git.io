@@ -1,0 +1,365 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Letter Container */
+.letter-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 1000px; /* Ensure minimum height for letterpad */
+}
+
+/* Item Number at top */
+.item-number-top {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Watermark */
+.watermark-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 0.15;
+    font-size: 42px;
+    color: #555;
+    pointer-events: none;
+    z-index: 1;
+    text-align: center;
+    width: 80%;
+}
+
+.watermark-image {
+    max-width: 300px;
+    max-height: 300px;
+    opacity: 0.1;
+}
+
+/* Logo and Letter Header */
+.letter-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.header-with-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 60px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: auto;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.header-text {
+    text-align: center;
+    padding: 0 90px;
+}
+
+/* Make officeName1 bold */
+#officeName1 {
+    font-weight: bold;
+}
+
+.contact-info-container {
+    margin-top: 10px;
+    position: relative;
+    min-height: 40px;
+}
+
+.contact-info-right {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    white-space: pre-line;
+    max-width: 60%;
+}
+
+/* Department header in letterhead */
+.department-header {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.department-header > div {
+    margin-bottom: 5px;
+}
+
+/* Letter References */
+.letter-references {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.left-references, .right-references {
+    width: 48%;
+}
+
+.right-references {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.entry-section, .case-section, .item-section {
+    margin-bottom: 15px;
+}
+
+.date-section {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+/* Style for dispatchedNo entries with content */
+#dispatchedNo:not(:empty) {
+    border: 1px solid black;
+    padding: 5px 8px;
+    display: inline-block;
+    margin: 2px 0;
+}
+
+/* Letter Subject */
+.letter-subject {
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Letter To */
+.letter-to {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* Letter Content */
+.letter-content {
+    margin-bottom: 30px;
+    min-height: 200px;
+    line-height: 1.6;
+    text-align: justify;
+    white-space: pre-line; /* Preserve line breaks in content */
+}
+
+/* Image Gallery */
+.image-gallery {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.letter-image {
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.letter-image:hover {
+    transform: scale(1.05);
+}
+
+/* Letter Signatures */
+.letter-signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.signature-block {
+    text-align: center;
+    width: 45%;
+}
+
+.signature {
+    font-style: italic;
+    margin-bottom: 5px;
+    min-height: 30px;
+}
+
+.signature-name {
+    font-weight: bold;
+}
+
+.signature-position {
+    font-style: italic;
+    color: #555;
+}
+
+/* Post Signature Section */
+.post-signature-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#tokadesh {
+    margin-bottom: 15px;
+}
+
+.bodartha-section {
+    margin-top: 15px;
+}
+
+/* Make bodhartha heading bold and underlined */
+.bodartha-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.bodartha-list {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+/* Letter Footer */
+.letter-footer {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Filter Controls */
+.filter-controls {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.filter-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    outline: none;
+    z-index: 101;
+}
+
+.filter-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.filter-button:active {
+    transform: scale(0.95);
+}
+
+.filter-panel {
+    position: absolute;
+    right: 70px;
+    top: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    display: none;
+    z-index: 102;
+}
+
+.filter-panel.show {
+    display: block;
+    animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.filter-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Hide empty elements */
+.empty {
+    display: none;
+}
+
+/* Empty Page Content */
+.empty-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    min-height: 800px;
+}
+
+.empty-content-text {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.empty-content-image {
+    max-width: 90%;
+    max-height: 400px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

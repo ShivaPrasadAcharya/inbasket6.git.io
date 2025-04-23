@@ -336,6 +336,44 @@ const letterData = [
       }
     ]
   },
+{
+    itemNo: "आइटम १",
+    filterName: "विवाह-पोखरा",
+    logoImage: "",
+    officeName1: [""],
+    officeName2: [""],
+    contactInfo: [""],
+    department: "",
+    mainOffice: "",
+    entryNo: "",
+    entryDate: "",
+    dispatchedNo: "",
+    caseNo: "",
+    date: "",
+    subject: "",
+    addressedTo: [""],
+    content: "",
+    images: [
+      {src: "marriage.png", position: "center"},
+     
+    ],
+    signature1: {
+      sign: "",
+      name: "",
+      position: ""
+    },
+    signature2: {
+      sign: "",
+      name: "",
+      position: ""
+    },
+    footerPhone: "",
+    footerEmail: "",
+    tokadesh: "",
+    bodharthaList: [""],
+    emptyPage: "NO",
+    emptyEntry: []
+  },
   {
     itemNo: "आइटम १-सूचना आयोग",
     filterName: "",

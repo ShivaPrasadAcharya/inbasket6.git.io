@@ -474,7 +474,7 @@ const letterData = [
     addressedTo: [""],
     content: "",
    images: [
-  { src: "your-image.png", position: "center", caption: "This is the text below the image" }
+  { src: "your-image.png", position: "center", caption: "नोटः कार्यालय सहयोगीको छोरीले अहिले SEE दिएको हुँदा  विवाहको उमेर पुगेको छैन भनी तपाईको सवारी चलाकले जानकारी गराएको" }
 ],
     signature1: {
       sign: "",

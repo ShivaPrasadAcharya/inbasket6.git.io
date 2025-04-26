@@ -473,8 +473,9 @@ const letterData = [
     subject: "",
     addressedTo: [""],
     content: "",
-    images: [   {src: "marriage.png", position: "left"} 
-    ],
+   images: [
+  { src: "your-image.png", position: "center", caption: "This is the text below the image" }
+],
     signature1: {
       sign: "",
       name: "",
@@ -490,7 +491,7 @@ const letterData = [
     tokadesh: "",
     bodharthaList: [""],
     emptyPage: "YES",
-    emptyEntry: ["marriage.png"]
+    emptyEntry: ["marriage.png", "This is text below image"]
   },
   {
     itemNo: "आइटम १-सूचना आयोग",

@@ -473,7 +473,7 @@ const letterData = [
     subject: "",
     addressedTo: [""],
     content: "",
-    images: [    
+    images: [   {src: "flower.png", position: "left"} 
     ],
     signature1: {
       sign: "",

@@ -37,7 +37,7 @@ const letterData = [
       emptyEntry: [
           "InBasket Exercise",
           "flower.png",
-          "Compiled By:","Shiva Prasad Acharya, Supreme Court"
+          "Compiled By:Shiva Prasad Acharya, Supreme Court"
            ]
   },
  {
@@ -474,7 +474,7 @@ const letterData = [
     addressedTo: [""],
     content: "",
     images: [
-      {src: "marriage.png", position: "center", size: "large"}
+      {}
      
     ],
     signature1: {
@@ -491,8 +491,8 @@ const letterData = [
     footerEmail: "",
     tokadesh: "",
     bodharthaList: [""],
-    emptyPage: "NO",
-    emptyEntry: []
+    emptyPage: "YES",
+    emptyEntry: [src: "marriage.png", position: "center", size: "large"]
   },
   {
     itemNo: "आइटम १-सूचना आयोग",

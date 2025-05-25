@@ -34,7 +34,7 @@ const letterData = [
       bodharthaList: [""],
       emptyPage: "YES",
       emptyEntry: [
-          "यो एउटा खाली पृष्ठ हो",
+          "यो एउटा खाली पृष्ठ हो-data1.js",
           "flower.png",
           "contact the compiler for enabling this inbasket exercise",
           "https://source.unsplash.com/featured/800x600"

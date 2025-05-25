@@ -10,7 +10,8 @@ const letterData = [
     mainOffice: "",
     entryNo: "",
     entryDate: "",
-    dispatchedNo: "",const letterData = [
+    dispatchedNo: "",
+    const letterData = [
   {
     
       itemNo: "स्वागतम्",
@@ -47,7 +48,7 @@ const letterData = [
       bodharthaList: [""],
       emptyPage: "YES",
       emptyEntry: [
-          "InBasket Exercise",
+          "InBasket Exercise-data0.js",
           "flower.png",
           "Compiled By:Shiva Prasad Acharya, Supreme Court"
            ]
